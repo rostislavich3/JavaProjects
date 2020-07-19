@@ -1,13 +1,11 @@
-package blackjacksolitaire;
+package blackjacksolitaire.JavaProjects;
 
-import javax.print.DocFlavor;
-
-public class Card {
+public class Card extends SuitShuffle {
     String face;
-    String suit;
+    SuitShuffle suit;
 //    int total 0;
 
-    public Card (String face, String suit) { //constructor
+    public Card (String face, SuitShuffle suit) { //constructor
         this.face = face;
         this.suit = suit;
     }
@@ -17,7 +15,7 @@ public class Card {
         return face;
     }
 
-    public String getSuit() {
+    public SuitShuffle getSuit() {
         return suit;
     }
 
